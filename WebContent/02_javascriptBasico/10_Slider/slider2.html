@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <script>
+	  var bandera = new Array ('espanha.jpg','alemania.jpg','francias.jpg','italia.jpg');
+	  var actual=0;
+	  var idTemp;
+	  
+	  function siguiente(){
+		  var ruta="imagenes/";
+		  actual++;
+		  document.getElementById('bandera').src = ruta + bandera[actual];
+		  
+	  }
+	</script>
+
+</head>
+<body>
+  <img src="imagenes/espanha.jpg" alt="Imagen 1"  id="bandera"/>
+  <input type="button" onclick="siguiente();"/>
+</body>
+</html>
