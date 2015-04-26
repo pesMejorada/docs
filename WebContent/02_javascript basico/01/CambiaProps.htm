@@ -1,0 +1,29 @@
+<HTML>
+<Head><Title></Title>
+<STYLE>
+ .unacapa {
+  height:200px; color:white; font-size:14pt; background-color:blue;
+  padding: 20px; border: 1px; border-style: solid;border-color: black; }
+</STYLE>  
+</Head>
+<Body>
+<Script language='JavaScript'>
+  
+ function CambiaProps(elemento, propiedad, valor){
+   document.getElementById(elemento).style[propiedad] = valor;
+  }
+</Script>
+
+<div id="capa1" class='unacapa' Style="position:absolute;left:200px;top:125px;visibility:visible"> 
+    Esta capa está situada por encima y esto es un texto que se muestra dentro de la capa 
+  <IMG src='underconstr.gif'>  
+</div>
+
+<Form>
+ <Input Type='button' Value='Fondo' onClick="CambiaProps('capa1','backgroundColor','red')">
+ <Input Type='button' Value='Tamaño de Letra' onClick="CambiaProps('capa1','fontSize','22pt')">
+ <Input Type='button' Value='Tipo de Letra' onClick="CambiaProps('capa1', 'fontStyle','italic')">  
+</Form> 
+
+</Body>
+</Html>

@@ -1,0 +1,40 @@
+<HTML><Head><Title></Title></Head>
+<body>
+<script language='JavaScript'>
+ var proceso=0;
+ var avanceh=5;
+ var avancev=5; 
+// limiteDer = 600;
+ limiteDer = document.body.clientWidth -105;
+ limiteIzq = 0;
+ limiteSup = 0;
+ limiteInf = document.body.clientHeight -110;;
+
+	  
+ function Mover(){
+   var capa = document.getElementById('lacapa');
+   posicionh = parseInt(capa.style.left);
+   posicionv = parseInt(capa.style.top);	 
+	 if (posicionh < limiteIzq)
+	   avanceh = 5;
+   if (posicionh > limiteDer)
+	   avanceh = -5;
+	 if (posicionv < limiteSup)
+	   avancev = 5;
+   if (posicionv > limiteInf)
+	   avancev = -5;
+
+   posicionh = posicionh + avanceh;
+   capa.style.left = posicionh + "px";
+   posicionv = posicionv + avancev;	 
+   capa.style.top = posicionv + "px";	      
+   }
+</Script>
+
+ <Font size=5><I> Pulsa encima de la imagen</I></Font>
+
+<div id="lacapa" Style="position:absolute;left:10px;top:125px;visibility:visible" onClick = "proceso=setInterval('Mover()',25)"> 
+  <img src='underconstr.gif'>  
+</div>
+</body>
+</Html>

@@ -1,0 +1,33 @@
+<HTML><Head><Title></Title></Head>
+<body>
+<Script language='JavaScript'>
+ var proceso=0;
+ var avance=5;
+ //limiteDer = screen.width - 150
+ limiteDer = document.body.clientWidth -150;
+ limiteIzq = 0;
+  
+ function MovHoriz(){
+   lacapa = document.getElementById('capa');
+   posicionh = parseInt(lacapa.style.left);
+	 if (posicionh < limiteIzq){
+		 lacapa.style.filter="fliph(enabled=0)";	 
+	   avance = 5;
+		 }
+   if (posicionh > limiteDer){
+	   avance = -5;
+		 lacapa.style.filter="fliph(enabled=1)";
+		 }
+   posicionh = posicionh + avance;
+   capa.style.left = posicionh + "px";     
+   }
+</Script>
+
+ <Font size=5><I> Pulsa encima de la imagen</I></Font>
+
+<div id="capa" Style="position:absolute;left:10px;top:125px;visibility:visible" 
+     onClick = "proceso=setInterval('MovHoriz()',15)"> 
+  <IMG src='ciclista.gif'>  
+</div>
+</body>
+</Html>

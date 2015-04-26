@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="es">
+  <head>
+    <title>CCTW Slider</title>
+    <meta charset="utf-8">
+    <meta name="description=" content="Sencillo slider de imágenes para la comunidad de ComoCrearTuWeb.com (CCTW)">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+    $(document).ready(function(){
+      // jQuery CCTW Slider
+      // Modify and distribute it as you like :D
+      
+      // Nombre de la clase del slider
+      var nombre = "cctwslide";
+      // Velocidad de transición entre cada imagen (en segundos)
+      var velocidad = 2;
+      // Velocidad a la que desaparecerá la imagen (slow / medium / fast)
+      var desaparecer = "fast";
+      // Velocidad a la que aparecerá la siguiente imagen (slow / medium / fast)
+      var aparecer = "fast";
+      
+      // Slider
+      function cctwslide(){
+        $('.'+ nombre +' img:gt(0)').hide();
+        var actual = 0;
+        setInterval(function(){
+          actual = actual + 1;
+          $('.'+nombre +' img:first-child').fadeOut(desaparecer);
+          $('.'+ nombre +' img:nth-child('+ actual +')').fadeOut(desaparecer);
+          $('.'+ nombre +' img:nth-child('+ actual +')').next().fadeIn(aparecer);
+        },velocidad * 1000);
+      }
+      
+      cctwslide()
+      
+    });
+    </script>
+  </head>
+  <body>
+    <div class="cctwslide">
+      <img src="http://www.comocreartuweb.com/consultas/image.php?u=20518&dateline=1305034311" alt="Imagen 1" />
+      <img src="http://www.comocreartuweb.com/consultas/images/misc/como-crear-tu-web.gif" alt="Imagen 2" />
+      <img src="http://www.comocreartuweb.com/imagenes/comunes/estilo1024/sered2.png" alt="Imagen 3" />
+      <img src="http://www.comocreartuweb.com/comunes/redes.jpg" alt="Imagen 4" />
+      <img src="http://www.comocreartuweb.com/imagenes/comunes/estilo1024/allinhosting.png" alt="Imagen 5" />
+    </div>
+  </body>
+</html>
