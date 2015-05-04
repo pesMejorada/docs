@@ -1,0 +1,18 @@
+Eclipse. Configuración básica
+Instalación: se debe descomprimir el archvivo descargado de la pagina.
+▫Workspace: carpeta de trabajo (osea donde se guardarán sus proyectos)
+
+***Utilización de espacios en lugar de tabuladores
+▫Mediante el menú: Windows > Preference, en la sección: General > Editors > Text Editors,
+                   se activa la casilla: Insert spaces for tabs
+***Desactivación de la corrección ortográfica para acelerar el entorno
+           Mediante el menú: Windows > Preferences, en la sección: General > Editors > Text Editors > Spelling,
+		   se desactiva la casilla: Enable spell checking
+
+		   
+***Codificación por defecto: UTF-8
+▫Para configurar los ficheros, menú: Windows > Preferences
+   en la sección: General > Workspace, en el apartado Text file encoding, se activa la opción: Other: UTF-8.
+▫Para configurar los ficheros de propiedades de Java, menú: Windows > Preferences, en la sección: 
+      General > Appearance > Content types, en la sección de Text > Java Properties File, en el apartado
+	  de Default Encoding, establecer UTF-8 y pulsar el botón de Update
