@@ -1,5 +1,5 @@
 Eclipse. Configuración básica
-Instalación: se debe descomprimir el archvivo descargado de la pagina.
+Instalación: se debe descomprimir el archivo descargado de la pagina.
 ▫Workspace: carpeta de trabajo (osea donde se guardarán sus proyectos)
 
 ***Utilización de espacios en lugar de tabuladores
@@ -16,3 +16,13 @@ Instalación: se debe descomprimir el archvivo descargado de la pagina.
 ▫Para configurar los ficheros de propiedades de Java, menú: Windows > Preferences, en la sección: 
       General > Appearance > Content types, en la sección de Text > Java Properties File, en el apartado
 	  de Default Encoding, establecer UTF-8 y pulsar el botón de Update
+	  
+*  utf-8 para el encoding de los html...
+	  Window > Preferences  >  web > HTML File  > 
+	  Del desplegable "Encoding" escoger (iso-10646) UTF-8
+	  *  utf-8 para el encoding de los CSS...
+      Window > Preferences  >  web > CSS  > 
+      Del desplegable "Encoding" escoger (iso-10646) UTF-8	
+       *  utf-8 para el encoding de los jsp...
+      Window > Preferences  >  web >jsp > 
+      Del desplegable "Encoding" escoger (iso-10646) UTF-8      
